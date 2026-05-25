@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
-            $table->strung('name');
+            $table->string('name');
             $table->string('color',7)->default('#6366f1');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->timestamps();
