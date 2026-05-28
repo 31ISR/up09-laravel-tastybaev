@@ -23,7 +23,7 @@
     <div class="col-md-3">
         <div class="card text-center border-0 bg-info bg-opacity-10">
             <div class="card-body">
-                <h2 class="mb-0">{{ $stats['in_progress'] }}</h2>
+                <h2 class="mb-0">{{ $stats['in_progress'] ?? 0 }}</h2>
                 <small class="text-muted">В работе</small>
             </div>
         </div>
